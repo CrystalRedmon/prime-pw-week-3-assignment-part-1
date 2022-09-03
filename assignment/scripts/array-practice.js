@@ -8,7 +8,7 @@ let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
-let favoriteFoods =['mac & cheese', 'fried shrimp', 'blackberries', 'bananas'];
+let favoriteFoods =['mac & cheese', 'fried shrimp', 'blackberries', 'watermelon'];
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
@@ -30,7 +30,7 @@ console.log('--- 3. Accessing items in an array ---');
 console.log('First animal is', animalArray[0])
 
 // 3.a. TODO: Log the second animal in the array 
-console.log('First animal is', animalArray[1]);
+console.log('Second animal is', animalArray[1]);
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
 console.log('Last animal is', animalArray[3]);
@@ -93,13 +93,24 @@ console.log(`Here's what I like to eat now: ${favoriteFoods}.`);
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 
+reverseFavoriteFoods = favoriteFoods.sort().reverse();
+console.log(reverseFavoriteFoods);
+
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let andAnotherOne = favoriteFoods.join(' and ');
+console.log(andAnotherOne);
+
+
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+let foodAnimals = favoriteFoods.concat(animalArray);
+console.log(foodAnimals);
